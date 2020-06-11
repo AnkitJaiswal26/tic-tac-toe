@@ -170,7 +170,41 @@ function computer_move(){
   var c = cornersOpen.length
   let e = edgesOpen.length
 
-  
+  if(!include(posssibleMoves, 5) && p==4 && c==3 && e==1 ){
+    if(board_1[1] == "X" && board_1[6] == "X" && board_1[5] == "X"){
+      move = 9
+      return move
+    }
+    else if(board_1[1] =="X" && board_1[8] =="X" && board_1[3] =="X"){
+      move = 3
+      return move
+    }
+    else if(board_1[7] =="X" && board_1[0] =="X" && board_1[3] =="X"){
+      move = 7
+      return move
+    }
+    else if(board_1[7] =="X" && board_1[2] =="X" && board_1[5] =="X"){
+      move = 1
+      return move
+    }
+    else if(board_1[3] =="X" && board_1[2] =="X" && board_1[7] =="X"){
+      move = 9
+      return move
+    }
+    else if(board_1[3] =="X" && board_1[8] =="X" && board_1[1] =="X"){
+      move = 3
+      return move
+    }
+    else if(board_1[5] =="X" && board_1[0] =="X" && board_1[1] =="X"){
+      move = 2
+      return move
+    }
+    else if(board_1[5] =="X" && board_1[6] =="X" && board_1[7] =="X"){
+      move = 9
+      return move
+    }
+
+  }
   if(!include(posssibleMoves, 5) && p == 6 && e == 2){
     if (board_1[1] == "X" && board_1[3] == "X"){
       move = 1
